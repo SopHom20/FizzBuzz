@@ -7,8 +7,9 @@ def processNumber(index, rules):
     if index % 7 == 0 and rules['7']:
         word_list.append("Bang")
     if index % 11 == 0 and rules['11']:
-        word_list.append("Bong")
-        del word_list[1:]
+         word_list.append("")
+         word_list[0] = "Bong"
+         del word_list[1:]
     if index % 13 == 0 and rules['13']:
         if "Fizz" in word_list:
             word_list.insert(1, "Fezz")
