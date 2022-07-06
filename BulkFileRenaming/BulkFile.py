@@ -2,7 +2,7 @@ import shutil
 import os
 from datetime import datetime
 
-pathname = input("Enter the path to the directory in which you want to rename all the files")
+pathname = input("Enter the path to the directory in which you want to rename all the files ")
 now = datetime.now()
 current_time = now.strftime("%d-%m-%y--%H-%M-%S--")
 
